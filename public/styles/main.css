@@ -1,0 +1,70 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+main {
+    text-align: center;
+    padding: 5vmin;
+    flex: 1 0 auto;
+  }  
+
+
+/* Home page */
+.home-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 40px;
+}
+
+
+.home-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 75px;
+    flex-direction: column;
+    /*background-color: #292F36 ; */
+}
+
+.home-body a {
+    margin-top: 20px;
+    text-decoration: none;
+    background: none;
+}
+
+
+/* Posts */
+
+.posts {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 40px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.posts p {
+    font-size: 20px;
+}
+
+.card-body {
+    border: #dee2e6bf solid 1px;
+    margin: 10px;
+}
+
+
+
+
+/* Edit page */
+.edit-post-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}

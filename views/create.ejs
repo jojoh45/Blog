@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+
+<form action="/submit" method="POST" class="max-width-">
+  <div class="p-5">
+    <div class="mb-3 mt-5">
+      <label  class="form-label">Title</label>
+      <input type="text" class="form-control" name="createTitle" placeholder="Enter your title">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Enter Text!</label>
+      <textarea class="form-control" placeholder="What is happening?!" rows="3" name="createText"></textarea>
+    </div>
+    <div class="">
+      <input type="submit" class="w-10 py-2 mb-2 btn btn-outline-secondary btn-sm rounded-3" value="Post">
+    </div>
+  </div>
+    
+  </form>
+

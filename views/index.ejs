@@ -1,0 +1,34 @@
+<%- include("partials/header.ejs") %>
+
+
+<h1 class="home-title">Blog</h1>
+
+
+<div class="home-body">
+    <div class="card border-light mb-3" style="width: 100%; padding: 20px;">
+
+        <% if (locals.posts) {%>
+            
+             <% posts.forEach((post) => {%>
+                <div class="card-body">
+                    <h3 class="card-title">
+                        <%= post.title %>
+                    </h3>
+                    <p class="card-text">
+                        <%= post.content %>
+                    </p>
+
+                    <a href="/edit/<%= post.id %>" class="btn btn-secondary btn-sm" role="button">Edit</a>
+                </div>
+
+            <% }); %>
+
+        <% } else { %>
+            <div class="card-body" style="border: #dee2e6bf solid 1px;">
+                <h1>No posts</h1>
+            </div>
+
+        <% } %>
+    </div>
+</div>
+

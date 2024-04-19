@@ -1,0 +1,28 @@
+<%- include("partials/header.ejs") %>
+
+<div class="modal modal-sheet position-static d-block p-4 py-md-5 mt-5">
+    <div class="modal-dialog">
+        <div class="modal-content rounded-4 shadow">
+
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+                <h1 class="fw-bold mb-0 fs-2">Edit Post</h1>
+            </div>
+
+            <div class="modal-body p-5 pt-0">
+                <form action="/edit/<%= post.id %>" method="POST">
+                    <div>
+                        <label class="form-label fs-5 fw-bold" for="content">Content:</label><br>
+                    </div>
+                    <div class="form-flotting">
+                        <textarea name="content" id="content" rows="4" cols="50" class="form-control"><%= post.content %></textarea><br>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
