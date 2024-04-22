@@ -41,3 +41,7 @@ Future updates to this project may include:
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request with your proposed changes.
+
+## Image
+
+![blog](https://github.com/jojoh45/Blog/assets/111920942/8dabbe30-0f9d-40eb-a2e5-9cf037b24e6e)
